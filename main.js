@@ -7,9 +7,9 @@ function randomValueFromArray(array){
   return array[random];
 }
 
-let storyText = '気温は華氏14度で外は寒かった。 :insertx: は外に出かけた。:inserty:　につくと、混雑していた。:insertx: 体重300ポンドの :insertz:　は驚いた。:inserty:　ではよくあることだった。';
-let insertX = ['Willy the Goblin','Big Daddy','Father Christmas'];
-let insertY = ['the soup kitchen','Disneyland','the White House'];
+let storyText = '気温は華氏14度で外は寒かった。 :insertx: は外に出かけた。:inserty:　につくと、混雑していた。体重300ポンドの :insertx:　は驚いた。:inserty:　ではよくあることだった。';
+let insertX = ['ミッキーマウス','ドナルド','ダッフィー'];
+let insertY = ['愛媛','福岡','大阪'];
 let insertZ = ['spontaneously combusted','melted into a puddle on the sidewalk','turned into a slug and crawled away'];
 
 randomize.addEventListener('click', result);
