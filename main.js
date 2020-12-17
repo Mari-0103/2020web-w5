@@ -8,7 +8,7 @@ function randomValueFromArray(array){
 }
 
 let storyText = 'It was 94 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.';
-let insertX = ['ミッキーマウス','ドナルド','ダッフィー'];
+let insertX = ['ミッキー','ドナルド','ダッフィー'];
 let insertY = ['愛媛','福岡','大阪'];
 let insertZ = ['spontaneously combusted','melted into a puddle on the sidewalk','turned into a slug and crawled away'];
 
