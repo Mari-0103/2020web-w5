@@ -7,7 +7,7 @@ function randomValueFromArray(array){
   return array[random];
 }
 
-let storyText = '外は華氏14度で寒かった。:insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.';
+let storyText = '外は華氏14度で寒かった。:insertx: は出かけた。 寒かったので :inserty:に向かった。weighs 300 poundsの　:insertx:　は　:insertz:。 夏はとても驚いた。:insertx:　が　:insertz:';
 let insertX = ['ミッキー','ドナルド','デイジー'];
 let insertY = ['愛媛','福岡','和歌山'];
 let insertZ = ['焼けた','溶けた','這った'];
@@ -28,7 +28,7 @@ function result() {
 
   if(customName.value !== '') {
     const name = customName.value;
-    newStory = newStory.replace('Bob',name);
+    newStory = newStory.replace('夏',name);
   }
 
   if(document.getElementById("日本").checked) {
