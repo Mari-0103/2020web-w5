@@ -7,10 +7,10 @@ function randomValueFromArray(array){
   return array[random];
 }
 
-let storyText = '外は華氏14度で寒かった。:insertx: は出かけた。 寒かったので10ポンドの :inserty: を焼いた。　:insertx:　は　:insertz: 。 夏はとても驚いた。:insertx:　が　:insertz: 。';
+let storyText = '外は華氏14度で寒かった。:insertx: は雪かきをした。寒かったので10ポンドの:inserty: を焼いた。すると、:insertz:　は　:insertz: 。夏はとても驚いたが、:insertx:　はいつものことだと笑った。';
 let insertX = ['ミッキー','ドナルド','デイジー'];
 let insertY = ['パン','ケーキ','クッキー'];
-let insertZ = ['焼けた','焦げた','這った'];
+let insertZ = ['焼けた','焦げた','消えた'];
 
 randomize.addEventListener('click', result);
 
@@ -33,7 +33,7 @@ function result() {
 
   if(document.getElementById("日本").checked) {
     const weight = Math.round(10*0.453) + 'キロ';
-    const temperature = Math.round((14-32) * 5 / 9) + '度';
+    const temperature = '摂氏' + Math.round((14-32) * 5 / 9) + '度';
     newStory = newStory.replace('華氏14度',temperature);
     newStory = newStory.replace('10ポンド',weight);
   }
