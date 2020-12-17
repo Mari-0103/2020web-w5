@@ -7,7 +7,7 @@ function randomValueFromArray(array){
   return array[random];
 }
 
-let storyText = 'It was 94 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.';
+let storyText = '外は摂氏40度で寒かった。:insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.';
 let insertX = ['ミッキー','ドナルド','デイジー'];
 let insertY = ['愛媛','福岡','和歌山'];
 let insertZ = ['焼けた','溶けた','這った'];
@@ -33,8 +33,8 @@ function result() {
 
   if(document.getElementById("日本").checked) {
     const weight = Math.round(300*0.0714286) + ' stone';
-    const temperature =  Math.round((94-32) * 5 / 9) + ' centigrade';
-    newStory = newStory.replace('94 fahrenheit',temperature);
+    const temperature =  Math.round((14-32) * 5 / 9) + ' centigrade';
+    newStory = newStory.replace('摂氏14度',temperature);
     newStory = newStory.replace('300 pounds',weight);
   }
 
