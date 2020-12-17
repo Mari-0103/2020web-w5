@@ -33,7 +33,7 @@ function result() {
 
   if(document.getElementById("日本").checked) {
     const weight = Math.round(10*0.453) + 'キロ';
-    const temperature = '摂氏' +  Math.round((14-32) * 5 / 9) + '度';
+    const temperature = Math.round((14-32) * 5 / 9) + '度';
     newStory = newStory.replace('華氏14度',temperature);
     newStory = newStory.replace('10ポンド',weight);
   }
